@@ -1,14 +1,17 @@
 import './App.css'
-import {MyButton} from './components/button/MyButton'
+import { MyCard } from './components/card/MyCard.jsx' 
 
 function App() { 
+  
 
   return (
     <>      
       <main>
-        <MyButton caption="Hello World" />
-      </main>
-      <footer></footer>       
+        <MyCard>
+          Hola
+        </MyCard>
+        
+      </main>          
     </>
   )
 }

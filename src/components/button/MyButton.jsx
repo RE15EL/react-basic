@@ -1,8 +1,14 @@
 import './MyButton.css';
 
-export function MyButton ( {caption} ) {
+export function MyButton ( {caption, onClick} ) {
   return (
-    <button name="custom_btn" className='btn'> {  caption } </button>
+    <button 
+      name="custom_btn" 
+      className='btn' 
+      onClick={onClick}
+    >
+         {caption} 
+    </button>
   )
 }
 
