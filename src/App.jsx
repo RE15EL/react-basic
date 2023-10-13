@@ -3,15 +3,14 @@ import { MyPageLayout } from './components/pageLayout/MyPageLayout.jsx'
 import { MyCard } from './components/card/MyCard.jsx' 
 
 
-function App() { 
-  
 
-  return (
-    <>      
+function App() {   
+
+  return (       
       <MyPageLayout>
-        <MyCard> Hola </MyCard>  
-      </MyPageLayout>          
-    </>
+        <MyCard title= "Lin Lanying" > Hola </MyCard>  
+        
+      </MyPageLayout> 
   )
 }
 
