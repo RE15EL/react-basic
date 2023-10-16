@@ -1,6 +1,6 @@
 import './MyAvatar.css';
 
-export function MyAvatar( {target, size} ) {
+export function MyAvatar( {target, size=50} ) {
     return (
       <img
         className="avatar"

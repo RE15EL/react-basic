@@ -4,9 +4,12 @@
     padding: 1em 2em;
     border-radius: 30px;
     background: #212121;
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-                -15px -15px 30px rgba(60, 60, 60, 0.419);
+    
    }
+    .card:hover{
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgba(60, 60, 60, 0.419);
+    }
    
     .card-header{
         display: flex;
