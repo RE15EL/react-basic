@@ -12,19 +12,19 @@ li{
 }
 
 .list-item{
-    color: #023400 !important;
     padding: .5rem;
     border-radius: .5rem; 
     border: 1px solid transparent;
     transition: all .3s;
 }
 .list-item.active{
-    color: var(--madang-100);
-    border: 1px solid var(--madang-950);
+    color: var(--mantis-950);
+    border: 1px solid var(--mantis-950);
+    background-color: var(--mantis-100);
 }
 
 .spcY{
-    box-shadow: 10px 10px 22px var(--madang-400);
+    box-shadow: 10px 10px 22px var(--mantis-400);
     margin: 2rem 0 3rem 0;
 }
 

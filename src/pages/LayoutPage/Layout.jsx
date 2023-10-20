@@ -11,7 +11,7 @@ export function Layout() {
     ].join(" ");
   };
     return (
-      <div>
+      <div className="container">
         <nav >
           <ul className="navigation">
             <li>
