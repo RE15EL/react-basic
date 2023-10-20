@@ -1,26 +1,35 @@
 import { useState } from "react";
 
-
 export function LoginForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [form, setForm] = useState(
+    {
+      email: '',
+      password: ''
+    }
+  );
 
-  const handleEmail = (event) => setEmail(event.target.value);
-
-  const handlePassword = (event) => setPassword(event.target.value);
+  const handleChange = (event) => {
+    setForm(
+      {
+        ...form,
+        [event.target.name]: event.target.value 
+      });
+  };  
 
   return (
-    <form onSubmit={ (event) => {
-        event.preventDefault()
-        alert(`${email} - ${password}`)
-      } }>
+    <form 
+      onSubmit={ (event) => {
+        event.preventDefault();
+        alert(`${form.email} - ${form.password}`);
+      }}
+    >
       <div>
         <label htmlFor="email">Email</label>
-        <input id="email" type="text" value={email} onChange={handleEmail}/>
+        <input id="email" name="email" type="text" value={form.email} onChange={handleChange}/>
       </div>
       <div>
         <label htmlFor="password">Password</label>
-        <input id="password" type="password" value={password} onChange={handlePassword}/>
+        <input id="password" name="password" type="password" value={form.password} onChange={handleChange}/>
       </div>
       <button type="submit" >Submit</button>
     </form>
