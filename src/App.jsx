@@ -1,10 +1,10 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import { Layout } from './pages/Layout.jsx'
-import { Home } from './pages/Home.jsx'
-import { About } from './pages/About.jsx'
-import { Dashboard } from './pages/Dashboard.jsx'
-import { NotFound } from './pages/NotFound.jsx'
+import { Layout } from './pages/LayoutPage/Layout.jsx'
+import { Home } from './pages/HomePage/Home.jsx'
+import { About } from './pages/AboutPage/About.jsx'
+import { Dashboard } from './pages/DashboardPage/Dashboard.jsx'
+import { NotFound } from './pages/NotFoundPage/NotFound.jsx'
 
 function App() {   
 
