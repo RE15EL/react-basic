@@ -1,20 +1,25 @@
 import './App.css'
-import { MyGallery } from './components/gallery/MyGallery'
-import { MyPageLayout } from './components/pageLayout/MyPageLayout.jsx'
-// import { MyCard } from './components/card/MyCard.jsx' 
-// import { MyList } from './components/list/MyList.jsx'
-
-
+import { Route, Routes } from 'react-router-dom'
+import { Layout } from './pages/Layout.jsx'
+import { Home } from './pages/Home.jsx'
+import { About } from './pages/About.jsx'
+import { Dashboard } from './pages/Dashboard.jsx'
+import { NotFound } from './pages/NotFound.jsx'
 
 function App() {   
 
-  return (       
-      <MyPageLayout>
-        {/* <MyCard title= "Lin Lanying" > Hola </MyCard>  
-        <MyList elements={people}/> */}
+  return ( 
+    <div className="container">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="dashboard" element={<Dashboard />} />
 
-        <MyGallery />
-      </MyPageLayout> 
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </div>
   )
 }
 
