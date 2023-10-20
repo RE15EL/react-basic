@@ -1,27 +1,34 @@
-import { Link, Outlet } from "react-router-dom";
-
+import { NavLink, Outlet } from "react-router-dom";
+import './Layout.css';
 
 export function Layout() {
+  const navLinkClassName = ( {isActive, isPending, isTransitioning} )=> {
+    return [
+      "list-item",
+      isActive ? "active" : " ",
+      isPending ? "pending" : " ",
+      isTransitioning ? "transitioning" : " "
+    ].join(" ");
+  };
     return (
       <div>
-        <nav>
-          <ul>
+        <nav >
+          <ul className="navigation">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink className={navLinkClassName} to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink className={navLinkClassName} to="/about">About</NavLink>
             </li>
             <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <NavLink className={navLinkClassName} to="/dashboard">Dashboard</NavLink>
             </li>
             <li>
-              <Link to="/nothing-here">Nothing Here</Link>
+              <NavLink className={navLinkClassName} to="/nothing-here">Nothing Here</NavLink>
             </li>
           </ul>
-        </nav>
-  
-        <hr />
+        </nav>  
+        <hr className="spcY"/>
         <Outlet />
       </div>
     );
