@@ -1,9 +1,12 @@
+import { LoginForm } from "../../components/forms/loginForm/LoginForm";
+import { MyContainer } from "../../components/my-container/MyContainer";
 
 
 export function Home() {
     return (
-      <div>
-        <h2>Home</h2>
-      </div>
+      <MyContainer>
+        <h1>Login</h1>
+        <LoginForm />
+      </MyContainer>
     );
   }
