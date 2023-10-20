@@ -21,6 +21,10 @@ export function LoginForm() {
       onSubmit={ (event) => {
         event.preventDefault();
         alert(`${form.email} - ${form.password}`);
+        setForm({
+          email: '',
+          password: '',
+        });
       }}
     >
       <div>
