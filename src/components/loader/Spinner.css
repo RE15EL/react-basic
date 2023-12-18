@@ -1,0 +1,9 @@
+.loader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    transform: translateY(150px);
+    backdrop-filter: blur(10px);
+}

@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import './MyPageLayout.css'
 
 export function MyPageLayout( ){
@@ -10,7 +10,7 @@ export function MyPageLayout( ){
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/context">About</Link>
                 </li>
                 <li>
                     <Link to="/dashboard">Dashboard</Link>

@@ -18,7 +18,7 @@ export function Layout() {
               <NavLink className={navLinkClassName} to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink className={navLinkClassName} to="/about">About</NavLink>
+              <NavLink className={navLinkClassName} to="/context">Context</NavLink>
             </li>
             <li>
               <NavLink className={navLinkClassName} to="/dashboard">Dashboard</NavLink>
